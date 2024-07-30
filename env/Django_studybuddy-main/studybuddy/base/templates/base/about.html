@@ -1,0 +1,28 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+</head>
+
+<header class="about_head header header--loggedIn">
+  <div class="container">
+    <a href="{% url 'home' %}" class="header__logo about__header__logo">
+      <img src="{% static 'images/logo.svg' %}" />
+      <h1>StudyBuddy</h1>
+    </a>
+
+    <a href="{% url 'update-user' %}"><button class="contact-button">Login</button>
+    </a>
+</header>
+
+<main class="about_main_section">
+  
+  <div class="hero">
+    <img src="{% static 'images/logo.svg' %}" class="logo">
+    <h1>Empowering the world to develop technology
+      <strong class="hero_str">through collective knowledge.</strong></h1>
+    <p>Our products and tools enable people to ask, share and learn at work or at home.</p>
+  </div>
+
+</main>
+
